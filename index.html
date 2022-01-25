@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML Attributes and Links</title>
+    </head>
+    <body>
+        <h2 id="top">HTML Attributes</h2>
+        <!-- id attribute => assigns a unique named identifier to an element -->
+
+        <!-- syntax:
+        attributeName = 'value' -->
+        <p align="center">
+            <em>Modifiers of element behaviors</em>
+        </p>
+
+        <h2>HTML Images</h2>
+
+        <div align="center">
+            <!-- Adds an image using absolute linking. absolute linking => from another domain -->
+            <a href="https://place-puppy.com/" target="_blank">
+                <img src="https://place-puppy.com/300x300"/>
+            </a>
+            <p>
+                <code>
+                    &lt;src="https://place-puppy.com/300x300"&gt;
+                </code>
+            </p>
+
+            <p>
+                <em>An image can be shown using &lt;img&gt; tag along with its <strong>src</strong> attribute</em>.
+                <!-- &lt; and &gt; are HTML entities -->
+            </p>
+        </div>
+        <!-- <img> tag => used to include images. creates an inline element -->
+            <!-- src attribute => accepts URL from an online resource or a local image -->
+
+        <!-- Adds an image using relative linking. relative linking => from a local source/directory -->
+        <img src="./images/cat.jpg" width="250" height="320">
+
+        <p>
+            <code>
+                &lt;img src="./images/cat.jpg" height="320" width="250"&gt;
+            </code>
+        </p>
+
+        <p>
+            Valid image extensions are the following:
+        </p>
+
+        <ol type="i" reversed>
+            <li>png</li>
+            <li>jpg/jpeg</li>
+            <li>bmp</li>
+            <li>svg</li>
+            <li>gif</li>
+            <li>tiff</li>
+            <li>webp</li>
+        </ol>\
+        <!-- type attribute => changes the numbered point of the <ol> elements (e.g. 1 = cardinal number, A = capitalized letters, a = small letters, I = capitalized Roman Numerals, i = small Roman Numerals) -->
+
+        <h2>HTML Links</h2>
+
+        <h4>Absolute Link</h4>
+        <!-- Creates a hyperlink element that redirects to an outside page/domain -->
+            <a href="https://zuitt.co">I'm a hyperlink</a>
+            <!-- <a> tag => anchor tags creates a hyperlink element when clicked will redirect to a different page. -->
+            <!-- href attribute => hypertext reference -->
+
+        <h4>Relative Link</h4>
+
+        <p>Go to <a href="./link.html">link.html</a> page</p>
+
+        <p>Go to <a href="./images/index.html">image/index.html</a> page</p>
+
+        <p>Go to <a href="#top">top</a>.</p>
+    </body>
+</html>
